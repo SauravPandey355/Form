@@ -1,0 +1,66 @@
+form{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+    flex-flow: column;
+    width: 36%;
+    margin: auto;
+    box-sizing: border-box;
+    border:2px solid black;
+    padding-left: 2%;
+    padding: 2%;
+    }
+  .tab{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    padding : 5px;
+    overflow: hidden;
+  }
+  
+  .tab input{
+    padding-top:20px;
+    height:100%;
+    width:100%;
+    font-size: 30px;
+    outline: none;
+    border:none;
+  }
+  .tab label{
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    height: 100%;
+    width:100%;
+    font-size:30px;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  .tab label::after{
+    content:"";
+    position: absolute;
+    left:0px;
+    bottom: -2px;
+    height: 100%;
+    width:100%;
+    font-size:30px;
+    pointer-events: none;
+    border-bottom: 3px solid rgb(0, 153, 255);
+    transform: translateX(-100%);
+  }
+  .content-name{
+    position: absolute;
+    bottom: 30px;
+    transition: all 0.3s ease;
+  }
+  .tab input:focus + .label-name .content-name{
+  transform: translateY(-50%);
+  font-size:30px;
+  color: rgb(0, 153, 255);
+  }
+  .tab input:focus + .label-name::after{
+    transform: translateX(0%);
+    font-size:30px;
+    color: rgb(0, 153, 255);
+}
+  

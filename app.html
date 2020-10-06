@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="./app.css"/>
+    <title>Form</title>
+</head>
+<body>
+    <div id = "error" style="text-align: center;font-size: large;color: cornflowerblue;"></div>
+    <div style = "display: flex;flex-wrap: wrap;">
+    <form id = 'form'>
+        <div class="tab"><input id='uname' type = "text" required/><label class="label-name"><span class="content-name">First Name</span></label></div>
+        <br/>
+        <div class="tab"><input id='lname' type = "text" required/><label class="label-name"><span class="content-name">Last Name</span></label></div>
+        <br/>
+        <div class="tab"><input id='mail' type = "email" required/><label class="label-name"><span class="content-name">Email</span></label></div>
+        <br/>
+        <div class="tab"><input id='Pno' type = "number" required/><label class="label-name"><span class="content-name">Phone No</span></label></div>
+        <br/>
+        <div class="tab"><input id='dob' type = "date" required/><label class="label-name"><span class="content-name">Date of Birth</span></label></div>
+        <br/>
+        <div class="tab"><input id='pass' type = "password" required/><label class="label-name"><span class="content-name">Password</span></label></div>
+        <br/>
+        <button type="submit">Submit</button>        
+    </form>
+</div>
+    <script src="./app.js">
+    </script>
+</body>
+</html>
